@@ -19,7 +19,7 @@ Se define $D$ como un vector de bits con solo 1s, luego se empieza con una venta
 Finalmente, $D$ se le aplica un bitshift a la izquierda y se actualiza la posición de la ventana según un valor $last$, que se obtiene al guardar la última posición en donde el último bit de $D$ era 1.
 
 Para claridad, a continuación se presenta una demostración paso a paso del algoritmo según el artículo.
-![Algoritmo aplicado](https://cdn.discordapp.com/attachments/862349028931272714/1438316840710570134/algoritmo.png?ex=69167071&is=69151ef1&hm=0eef731f32b3d21f23d7e0ad6078297479c2b6b8e32ef78fb9692735d8e2a4a6&)
+![Algoritmo aplicado](https://github.com/parlinhoo/proyecto1-eedda/blob/main/algoritmo.png)
 
 
 Lo fundamental para relacionar éste algoritmo con un autómata finito no-determinista es darse cuenta que $D$ representa los estados de cada una de las posiciones de los caracteres de la ventana, y aplicar la máscara es hacer un paso del autómata, que vuelve 0 todos los "estados" que no tienen una transición en el grafo.
